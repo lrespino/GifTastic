@@ -1,5 +1,24 @@
  // Initial array of gif
- var gifs = ["The Matrix", "The Notebook", "Mr. Nobody", "The Lion King"];
+ var gifs = [" Altitude ", 
+ " Alien vs Ninja ", 
+ " Arctic Blast ", 
+ " Batman: Under the Red Hood ", 
+ " Beyond the Black Rainbow ", 
+ " The Book of Eli ", 
+ " The Crazies ", 
+ " Daybreakers ", 
+ " Denizen ", 
+ " Despicable Me ", 
+ " The Disappearance of Haruhi Suzumiya ", 
+ " Downstream ", 
+ " Enthiran ", 
+ " Future X-Cops ", 
+ " Growth ", 
+ " Hot Tub Time Machine ", 
+ " Hunter Prey ", 
+ " Inception ", 
+ " Iron Man 2 ", 
+ " Justice League: Crisis on Two Earths "];
  function alertGifName() {
 
 }
@@ -16,8 +35,9 @@
  // This function handles events where a gif button is clicked
  $("#add-gif").on("click", function(event) {
     event.preventDefault();
-    var gifB = $("#gif-input").val().trim();
-    movies.push(gifB);
+    console.log(this);
+    var gif = $("#gif-input").val().trim();
+    movies.push(gif);
     renderButtons();
   });
   $(document).on("click", ".gif-btn", alertGifName);
